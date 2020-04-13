@@ -8,19 +8,23 @@
 ### 2.2.2 感知机学习策略
 目标：求得一个能够将训练集正实例点和负实例点完全正确分开的分离超平面。
 策略：为确定感知机参数，w,b. 定义损失函数并将损失函数极小化。
-![](en-resource://database/1324:1)
+![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/2_1.png)     
+
 任意一点x0到超平面S的距离推导：
-![](en-resource://database/1326:1)
+![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/2_2.png)
+
 ## 2.3 感知机学习算法
 感知机学习问题转化为求解损失函数的最优化问题，最优化的方法是随机梯度下降法。
 ### 2.3.1 感知机学习算法的原始形式
 当一个实例点被误分类，即位于分离超平面的错误一侧时，则调整w,b的值，使分离超平面向该误分类点的一侧移动，以减少该误分类点与超平面间的距离，直至超平面越过该误分类点使其被正确分类。
-![](en-resource://database/1328:0)
+![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/2_3.png)
+
 ### 2.3.2 算法的收敛性
 根据定理证明，误分类的次数k是由上界的，经过有限次搜索可以找到将训练数据完全正确分开的分离超平面，即当训练数据集线性可分时，感知机学习算法原始形式迭代是收敛的。
 感知机学习算法的解不是唯一的。当训练集线性不可分时，感知机学习算法不收敛，迭代结果会发生震荡。
 ### 2.3.3 感知机学习算法的对偶形式
-![](en-resource://database/1330:0)
+![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/2_4.png)
+
 **Gram矩阵：**
 提出：对偶形式中训练实例仅以內积的形式存在，方便计算（省的在训练过程中在进行单独计算），所以预先将训练实例间的內积计算出来并以矩阵的形式存储这个矩阵就是Gram矩阵。
-![](en-resource://database/1332:0)
+![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/2_5.png)
