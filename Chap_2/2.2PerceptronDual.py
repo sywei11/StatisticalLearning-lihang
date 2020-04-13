@@ -29,7 +29,7 @@ class Perceptron:
                 temp = b
                 for j in range(n):
                     temp += a[j] * self.labels[j] * gram[j][i]
-                if((self.labels[i] * temp) <= 0): #判断是否误分类点
+                if((self.labels[i] * temp) <= 0): #判断是否误分类点,切记不要忘了标志位labels，即y
                     a[i] += self.eta #更新权重
                     b += self.eta * self.labels[i]  #更新偏置
                     t += 1  #计数加1
@@ -47,5 +47,3 @@ if __name__ == "__main__":
     per = Perceptron(dataset, labels, eta)
     w, b = per.train()
     print("result: weights,%s bias,%s" % (w,b))
-
-
