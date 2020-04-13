@@ -11,8 +11,8 @@
 ![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/2_1.png)     
 
 任意一点x0到超平面S的距离推导：
+![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/2_2.png)            
 参考：https://blog.csdn.net/yutao03081/article/details/76652943?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522158676873719725211947849%2522%252C%2522scm%2522%253A%252220140713.130056874..%2522%257D&request_id=158676873719725211947849&biz_id=0&utm_source=distribute.pc_search_result.none-task-blog-blog_SOOPENSEARCH-2
-![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/2_2.png)
 
 ## 2.3 感知机学习算法
 感知机学习问题转化为求解损失函数的最优化问题，最优化的方法是随机梯度下降法。
