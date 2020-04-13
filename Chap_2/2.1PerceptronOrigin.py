@@ -23,7 +23,7 @@ class Perceptron:
         while(flag):
             flag = False
             for i in range(n):
-                if(self.labels[i] * (w.dot(self.dataset[i])+b) <= 0): #误分类点
+                if(self.labels[i] * (w.dot(self.dataset[i])+b) <= 0): #判断是否误分类点
                     w += self.eta * self.labels[i] * self.dataset[i]  #更新权重
                     b += self.eta * self.labels[i]  #更新偏置
                     t += 1  #计数加1
