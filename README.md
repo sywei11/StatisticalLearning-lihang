@@ -9,4 +9,8 @@
 https://blog.csdn.net/tudaodiaozhale/article/details/77193533
 https://blog.csdn.net/tudaodiaozhale/article/details/77198684
 
-
+# [第3章](https://github.com/RubbshiWei/StatisticalLearning-lihang/tree/master/Chap_3) k近邻法
+参考：
+https://blog.csdn.net/tudaodiaozhale/article/details/77327003
+https://blog.csdn.net/breeze_blows/article/details/86361990
+https://leileiluoluo.com/posts/kdtree-algorithm-and-implementation.html
