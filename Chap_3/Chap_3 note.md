@@ -8,10 +8,10 @@ k值的选择、距离度量及分类决策规则是k近邻法的三个基本要
 ### 3.2.1 模型
 ### 3.2.2 距离度量
 特征空间中两个实例点的距离是两个实例点相似程度的反映。
-![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/3_1.png)
-![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/3_1.png)
+![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/3_1.png) 
+![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/3_2.png)
 p=无穷时，距离公式推导：
-![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/3_1.png)
+![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/3_3.png)
 
 参考：https://blog.csdn.net/W_peijian/article/details/79113020?utm_source=blogxgwz7
 ### 3.2.3 k值的选择
@@ -23,7 +23,7 @@ k近邻法中的分类决策规选择多数表决，即由输入实例的k个邻
 主要考虑如何对训练数据进行快速k近邻搜索
 ### 3.3.1 构造kd树
 kd树是一种对k维空间中的实例点进行存储以便对其进行快速检索的树形数据结构。
-![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/3_1.png)
+![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/3_4.png)
 ### 3.3.2 搜索kd树
-![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/3_1.png)
+![](https://github.com/RubbshiWei/StatisticalLearning-lihang/blob/master/image/3_5.png)
 注意：  (a)与当前点（父节点）   (b)另一侧子节点
